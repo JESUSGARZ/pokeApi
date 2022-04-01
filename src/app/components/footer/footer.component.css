@@ -1,0 +1,19 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+  width: 100%;
+  height: 250px;
+  background-color: #0288d1;
+  color: white;
+  text-align: center;
+}
+footer div a{
+  margin-left: 15px;
+}
+
+a {
+  text-decoration: none;
+}

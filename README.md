@@ -4,7 +4,7 @@
   ![final](./src/assets/images/Picture2.png)
    ![final](./src/assets/images/Picture3.png)
 
-   you can go to the deploy of the project in this link :   [PokemonApp](https://karma-runner.github.io)
+   you can go to the deploy of the project in this link :   [PokemonApp](https://pokeapy.netlify.app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 

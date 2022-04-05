@@ -9,8 +9,8 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 export class TableComponent implements OnInit {
   pokemons: any[] = [];
   stat: any[] = [];
-  class: string = 'stats'
-  display: boolean = true
+  /* class: string = 'stats' */
+  display: string = ''
 
 
 
@@ -21,7 +21,7 @@ export class TableComponent implements OnInit {
   ngOnInit(): void {
     this.getPokemons();
     this.getStat();
-    this.display = false
+    this.display = 'stats'
   }
 
   getPokemons() {
@@ -68,9 +68,14 @@ export class TableComponent implements OnInit {
       );
     }
   }
- handleDisplay() {
-   this.class = (this.display) ? 'display': 'stats';
-   this.display = !this.display;
+ handleDisplay(id: any) {
+  let pokemon = document.getElementById(id)
+  if (pokemon?.className == 'display') {
+    pokemon?.setAttribute('class', 'stats')
+
+  } else {
+    pokemon?.setAttribute('class', 'display')
+  }
  }
 
 }
